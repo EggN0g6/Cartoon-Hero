@@ -1,0 +1,56 @@
+          <!--- 1
+
+			If two style rulesets directly conflict and have the same level of specicifity, the one written the most recently takes precedent.	
+
+          	<h1> creates a heading element, adding the style="" line allows us to add CSS property pairs between the "" quotations.
+
+          	the font-size: ; property pair overrides the defaults set by using the h1 or the h2 heading prompts.
+
+          	to add a style element in css to a singkle attribute without using rulesets, use the following format:
+
+          	<h1 style="font-size: 30px; color: #0BA403;"> </h1>
+
+          	line specicifity outweighs class specicifty. 
+
+          	<Span> is like a blank box, it inherits the style elements of the element it is inserted into
+
+      		-->
+
+<!--- 2 
+
+the below style attribute is called a rulset, and allows blanket functions to be applied to different style elements
+
+	Deleted in order to link the .css doc with all the styles in it:
+
+	<style type="text/css">
+	</style>
+
+ -->
+
+
+
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Style test</title>
+
+			<!---2-->
+
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+	<!---1-->
+    <span>Span element</span>
+	<h1 class="Uppercase">
+		<span>Heading 1</span> - 1
+		</h1>
+	<h1 class="big">Heading 1 - 2</h1>
+	<h1>Heading 1 - 3</h1>
+	<h2 class="big Uppercase">Heading 2 - 1</h2>
+	<h2>Heading 2 - 2</h2>
+	<h2 class="big">Heading 2 - 3</h2>
+</body>
+</html>
+
